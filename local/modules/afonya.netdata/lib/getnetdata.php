@@ -49,7 +49,7 @@ class getnetdata extends \CBitrixComponent
         $checkNet='BEELINE'; //часть названия сети
         $ArrIRs = netdataTable::getList([
             'filter' => [
-                '!=checkedin' => 10,
+                '!=checkedin' => 1,
             ],
         ])->fetchAll();
 
